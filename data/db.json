@@ -1,0 +1,36 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Welcome to secretBlog",
+      "body": "onsectetur adipisicing elit. Sunt doloribus odio dicta fugit repudiandae earum rerum est et a consequuntur.",
+      "likes": 30
+    },
+    {
+      "id": 3,
+      "title": "Actual blog",
+      "body": "onsectetur adipisicing elit. Sunt doloribus odio dicta fugit repudiandae earum rerum est et a consequuntur.",
+      "likes": 50
+    },
+    {
+      "id": 4,
+      "title": "Secret website",
+      "body": "onsectetur adipisicing elit. Sunt doloribus odio dicta fugit repudiandae earum rerum est et a consequuntur.",
+      "likes": 45
+    },
+    {
+      "title": "New Javascript react ",
+      "body": "Important : onsectetur adipisicing elit. Sunt doloribus odio dicta fugit repudiandae earum rerum est et a consequuntur.\nonsectetur adipisicing elit. Sunt doloribus odio dicta fugit repudiandae earum rerum est et a consequuntur.\nonsectetur adipisicing elit. Sunt doloribus odio dicta fugit repudiandae earum rerum est et a consequuntur.\nonsectetur adipisicing elit. Sunt doloribus odio dicta fugit repudiandae earum rerum est et a consequuntur.",
+      "likes": 0,
+      "id": 5
+    }
+  ],
+  "polls": [
+    {
+      "id": 1,
+      "title": "Welcome to secretBlog",
+      "body": "onsectetur adipisicing elit. Sunt doloribus odio dicta fugit repudiandae earum rerum est et a consequuntur.",
+      "likes": 30
+    }
+  ]
+}
