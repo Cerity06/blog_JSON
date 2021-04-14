@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+  --color: rgb(20, 85, 224);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: black;
+}
+
+.nav_bar {
+  display: flex;
+  font-family: inherit;
+}
+
+.nav_bar h1 {
+  margin: 20px;
+  color:  var(--color); 
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+
+.links ul > a {
+  color: var(--color); 
+  font: 24px bold inherit;
+  text-decoration: none;
+  padding: 10px;
+  margin: 15px;
+}
+
+.links ul > a:hover {
+  border-bottom: var(--color) 2px solid;
+}
+
+.create_art {
+  text-align: center;
+  padding: 20px;
+  color: var(--color);
+}
+
+.form_art {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(13, 58, 155, 0.1);
+  border-radius: 5px;
+}
+
+label {
+  font-weight: bold;
+  margin: 20px 0 15px 0;
+}
+
+.title {
+  width: 500px;
+  height: 50px;
+}
+
+textarea {
+  width: 500px;
+  min-height: 300px;
+}
+
+textarea, input {
+  border: var(--color) 1px solid;
+  border-radius: 5px;
+}
+
+.submit {
+  padding: 10px 20px;
+  font-weight: bold;
+  color:rgb(13, 58, 155);
+  margin: 25px 0;
+}
+
+.home {
+  color: var(--color);
+  text-align: center;
+  background-color: rgb(13, 58, 155, 0.1);
+  padding: 10px;
+}
+
+.home_art {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 30px 40px;
+  justify-content: space-evenly;
+}
+
+.home_art div {
+  padding: 15px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.articles, .article {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.articles {
+  background-color: rgb(13, 58, 155, 0.1);
+}
+
+.article {
+  background-color: white;
+  margin: 15px 0;
+  position: relative;
+}
+
+.article:hover .btn_del {
+  opacity: 1; 
+  transform: translate(0, -20%);
+}
+
+.btn_del {
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease; 
+  cursor: pointer;
+}
+
+.article a {
+  color: var(--color);
+  cursor: pointer;
+}
+
+.article h2 {
+  color: var(--color);
+  margin: 0;
+}
+
+.article p {
+  margin-top: 0;
+} 
+
+.search {
+  padding: 8px;
+  transition: width 1s ease;
+  width: 150px;
+  outline: none;
+}
+
+.search:hover {
+  width: 300px;
+  font-style: italic;
+}
