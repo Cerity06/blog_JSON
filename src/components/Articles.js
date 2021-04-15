@@ -11,7 +11,7 @@ const Articles = () => {
         let url = 'http://localhost:3200/posts?_sort=likes&_order=desc';
 
         if (search) {
-            url += `&q=${search}`; 
+            url += `&q=${search}`;
         }
     
         const res = await fetch(url);

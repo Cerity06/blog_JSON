@@ -20,17 +20,19 @@ p {
 
 .nav_bar {
   display: flex;
+  flex-wrap: wrap;
   font-family: inherit;
+  margin: 0.5rem 1rem;
+  color: var(--color); 
 }
 
-.nav_bar h1 {
-  margin: 20px;
-  color:  var(--color); 
+.logo_nav {
+  align-items: center;
 }
 
 .links {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   flex: 1;
 }
@@ -39,17 +41,17 @@ p {
   color: var(--color); 
   font: 24px bold inherit;
   text-decoration: none;
-  padding: 10px;
-  margin: 15px;
+  padding: 0.7rem;
+  margin: 0.7rem;
 }
 
 .links ul > a:hover {
-  border-bottom: var(--color) 2px solid;
+  border-bottom: var(--color) 0.1em solid;
 }
 
 .create_art {
   text-align: center;
-  padding: 20px;
+  padding: 1.8rem;
   color: var(--color);
 }
 
@@ -59,69 +61,83 @@ p {
   justify-content: center;
   align-items: center;
   background-color: rgb(13, 58, 155, 0.1);
-  border-radius: 5px;
+  border-radius: 1em;
 }
 
 label {
   font-weight: bold;
-  margin: 20px 0 15px 0;
+  margin: 2rem 0 1rem 0;
 }
 
 .title {
-  width: 500px;
-  height: 50px;
+  width: 35em;
+  height: 3em;
 }
 
 textarea {
-  width: 500px;
-  min-height: 300px;
+  width: 35em;
+  min-height: 22em;
 }
 
 textarea, input {
-  border: var(--color) 1px solid;
-  border-radius: 5px;
+  border: var(--color) 0.1em solid;
+  border-radius: 0.5em;
 }
 
 .submit {
-  padding: 10px 20px;
+  padding: 0.5rem 1rem;
   font-weight: bold;
   color:rgb(13, 58, 155);
-  margin: 25px 0;
+  background-color: white;
+  margin: 1rem 0.5rem;
+  border: none;
+  border-radius: 0.5em;
+  outline: none;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: var(--color);
+  color:white;
 }
 
 .home {
   color: var(--color);
   text-align: center;
   background-color: rgb(13, 58, 155, 0.1);
-  padding: 10px;
+  padding: 1rem;
 }
 
 .home_art {
   display: grid;
   grid-template-columns: auto auto;
-  grid-gap: 30px 40px;
+  grid-gap: 1.5rem 2rem;
   justify-content: space-evenly;
 }
 
 .home_art div {
-  padding: 15px;
+  padding: 1rem;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 0.5em;
 }
 
 .articles, .article {
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
+  padding: 0.6rem;
+  margin: 0.6rem;
+  border-radius: 0.5em;
 }
 
 .articles {
   background-color: rgb(13, 58, 155, 0.1);
 }
 
+.articles h2 {
+  color: var(--color);
+}
+
 .article {
   background-color: white;
-  margin: 15px 0;
+  margin: 1rem 0;
   position: relative;
 }
 
@@ -133,8 +149,8 @@ textarea, input {
 .btn_del {
   outline: none;
   border: none;
-  padding: 5px;
-  border-radius: 10px;
+  padding: 0.3rem;
+  border-radius: 0.5em;
   position: absolute;
   top: 0px;
   right: 20px;
@@ -158,13 +174,13 @@ textarea, input {
 } 
 
 .search {
-  padding: 8px;
+  padding: 0.5em;
   transition: width 1s ease;
-  width: 150px;
+  width: 10rem;
   outline: none;
+  font-style: italic;
 }
 
 .search:hover {
-  width: 300px;
-  font-style: italic;
+  width: 20rem;
 }
